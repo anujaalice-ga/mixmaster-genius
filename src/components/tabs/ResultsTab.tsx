@@ -297,10 +297,26 @@ const ResultsTab = () => {
                 {/* AI Analysis */}
                 <div className="flex items-start space-x-3 p-4 bg-accent/5 rounded-lg">
                   <Brain className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                  <div>
+                  <div className="flex-1">
                     <h4 className="font-medium text-foreground mb-1">AI Analysis</h4>
                     <p className="text-sm text-muted-foreground">{result.aiAnalysis}</p>
                   </div>
+                  {result.status === 'good' && (
+                    <Button 
+                      size="sm" 
+                      className="lab-button ml-4"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toast({
+                          title: "Production Request Sent",
+                          description: `Mix ${result.mixId} sent to Raw Material Department for production approval.`,
+                        });
+                      }}
+                    >
+                      <Package className="mr-2 h-4 w-4" />
+                      Send for Production
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             )}
