@@ -36,8 +36,8 @@ const HomePage = ({ onEnterApp }: HomePageProps) => {
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
           <div className="animate-slide-up">
             <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
-              AI-Powered
-              <span className="block text-gradient">Cement Mix Advisor</span>
+              <span className="text-white">AI-Powered</span>
+              <span className="block text-primary-glow">Cement Mix Advisor</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
               Revolutionize your cement laboratory with intelligent mix optimization, 
@@ -64,15 +64,15 @@ const HomePage = ({ onEnterApp }: HomePageProps) => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent mb-2">98%</div>
+              <div className="text-4xl font-bold text-primary-glow mb-2">98%</div>
               <div className="text-white/80">Accuracy Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent mb-2">45%</div>
+              <div className="text-4xl font-bold text-primary-glow mb-2">45%</div>
               <div className="text-white/80">Time Saved</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent mb-2">24/7</div>
+              <div className="text-4xl font-bold text-primary-glow mb-2">24/7</div>
               <div className="text-white/80">AI Assistance</div>
             </div>
           </div>
