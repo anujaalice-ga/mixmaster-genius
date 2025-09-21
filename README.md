@@ -1,73 +1,29 @@
-# Welcome to your Lovable project
+# AI-Powered Cement Mix Advisor
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/520a698b-0189-49f7-a341-55a749a6d70d
+The **AI-Powered Cement Mix Advisor** is a practical, human-centric application that streamlines cement mix design. It leverages **Generative AI** to propose optimized mixes based on user-specified targets (strength, durability, shrinkage, CO₂ footprint) and an **AI agent layer** to evaluate feasibility, highlight trade-offs, and prevent redundant testing. A **human-in-the-loop** ensures engineers retain control, reviewing and approving final mixes before lab testing or production.
 
-## How can I edit this code?
+This tool transforms a slow, trial-and-error workflow into a fast, actionable, and environmentally conscious process for lab engineers and plant operators.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Key Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/520a698b-0189-49f7-a341-55a749a6d70d) and start prompting.
+- **AI Mix Generation:** Produces multiple candidate cement mixes based on target specifications.
+- **Feasibility Checks:** Ensures mixes comply with water/cement ratio limits, total binder constraints, and other basic rules.
+- **Human-in-the-Loop:** Engineers review, tweak, and approve AI-generated mixes.
+- **Interactive UI:** Card-based presentation with sliders and graphs to visualize mix properties.
+- **Lab Testing Recommendations:** AI agent suggests which mixes to send for lab validation.
+- **Results Tracking & Recall:** Store and recall past mixes and lab results for future reference.
+- **Production Request Generation:** Automatically generates raw material requests for approved mixes.
+- **GenAI Lab Manual:** Explains chemical and mix effects in plain language for operator guidance.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Workflow
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/520a698b-0189-49f7-a341-55a749a6d70d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Engineer enters target specifications (strength, shrinkage, CO₂, etc.).
+2. Generative AI produces multiple candidate mixes.
+3. AI agent evaluates feasibility, checks duplicates, and highlights trade-offs.
+4. Engineer reviews suggestions, makes
